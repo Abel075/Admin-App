@@ -123,24 +123,24 @@
 
                             <li
                                 class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center active">
-                                <a class="text-white nav-link" href="categorias.html">Productos</a>
+                                <a class="text-white nav-link" href="#">Productos</a>
                                 <span class="badge bg-primary rounded-pill">200</span>
                             </li>
 
                             <li
                                 class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                                <a class="text-dark nav-link" href="categorias.html">Inventario</a>
+                                <a class="text-dark nav-link" href="inventario.html">Inventario</a>
                                 <span class="badge bg-primary rounded-pill">500</span>
                             </li>
                             <li
                                 class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                                <a class="text-dark nav-link" href="categorias.html">Pedidos</a>
+                                <a class="text-dark nav-link" href="#">Pedidos</a>
                                 <span class="badge bg-primary rounded-pill">14</span>
                             </li>
 
                             <li
                                 class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                                <a class="text-dark nav-link" href="categorias.html">Cupones</a>
+                                <a class="text-dark nav-link" href="#">Cupones</a>
                                 <span class="badge bg-primary rounded-pill">20</span>
                             </li>
                         </ul>
@@ -228,14 +228,35 @@
                                     <th>Producto</th>
                                     <th>Talle</th>
                                     <th>Precio</th>
+                                    <th>Acciones</th>
                                 </tr>
                             </thead>
                             <tbody>
+
                                 <tr>
                                     <td>1</td>
-                                    <td>Camisas</td>
-                                    <td>camisas</td>
-                                    <td>Productos Camisas</td>
+                                    <td>Camisa 1</td>
+                                    <td>l</td>
+                                    <td>900</td>
+                                    <td style="width: 150px;">
+                                        <div class="btn-group" role="group">
+                                            <a href="#" class="btn btn-primary text-white"><i
+                                                    class="fas fa-edit"></i></a>
+
+                                            <a href="#" class="btn btn-success text-white"><i
+                                                    class="fas fa-list-alt"></i></a>
+
+                                            <a href="#" class="btn btn-danger text-white"><i
+                                                    class="fas fa-trash-alt"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>Camisa 2</td>
+                                    <td>Xl</td>
+                                    <td>1500</td>
                                     <td style="width: 150px;">
                                         <div class="btn-group" role="group">
                                             <a href="#" class="btn btn-primary text-white"><i
@@ -251,63 +272,9 @@
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>Camisas</td>
-                                    <td>camisas</td>
-                                    <td>Productos Camisas</td>
-                                    <td style="width: 150px;">
-                                        <div class="btn-group" role="group">
-                                            <a href="#" class="btn btn-primary text-white"><i
-                                                    class="fas fa-edit"></i></a>
-
-                                            <a href="#" class="btn btn-success text-white"><i
-                                                    class="fas fa-list-alt"></i></a>
-
-                                            <a href="#" class="btn btn-danger text-white"><i
-                                                    class="fas fa-trash-alt"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Camisas</td>
-                                    <td>camisas</td>
-                                    <td>Productos Camisas</td>
-                                    <td style="width: 150px;">
-                                        <div class="btn-group" role="group">
-                                            <a href="#" class="btn btn-primary text-white"><i
-                                                    class="fas fa-edit"></i></a>
-
-                                            <a href="#" class="btn btn-success text-white"><i
-                                                    class="fas fa-list-alt"></i></a>
-
-                                            <a href="#" class="btn btn-danger text-white"><i
-                                                    class="fas fa-trash-alt"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Camisas</td>
-                                    <td>camisas</td>
-                                    <td>Productos Camisas</td>
-                                    <td style="width: 150px;">
-                                        <div class="btn-group" role="group">
-                                            <a href="#" class="btn btn-primary text-white"><i
-                                                    class="fas fa-edit"></i></a>
-
-                                            <a href="#" class="btn btn-success text-white"><i
-                                                    class="fas fa-list-alt"></i></a>
-
-                                            <a href="#" class="btn btn-danger text-white"><i
-                                                    class="fas fa-trash-alt"></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Camisas</td>
-                                    <td>camisas</td>
-                                    <td>Productos Camisas</td>
+                                    <td>Camisa 3</td>
+                                    <td>Xl</td>
+                                    <td>1100</td>
                                     <td style="width: 150px;">
                                         <div class="btn-group" role="group">
                                             <a href="#" class="btn btn-primary text-white"><i
@@ -441,10 +408,10 @@
     <!-- ckeditor -->
     <script>
         ClassicEditor
-            .create( document.querySelector( '#editor1' ) )
-            .catch( error => {
-                console.error( error );
-            } );
+            .create(document.querySelector('#editor1'))
+            .catch(error => {
+                console.error(error);
+            });
     </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
