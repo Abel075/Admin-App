@@ -184,38 +184,32 @@
 
             <!-- Layout 9 columnas -->
             <div class="col-sm-12 col-md-9">
-                <div class="card">
-                    <div class="card-header bg-dark text-white">
-                        <h4><i class="fas fa-cart-arrow-down"></i> Panel de Control/Ecommerce</h4>
-                    </div>
+                <div class="row">
                     <div class="card-body">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="panel.html">Inicio</a>
+                                </li>
 
-                        <!-- Usamos Flexbox- Justify-content content-around -->
-                        <div class="d-flex justify-content-around row g-2">
-
-                            <div class="col-sm-12 col-md-3 card py-3 bg-danger text-center text-white">
-                                <i class="fas fa-cart-arrow-down fa-5x" ;"></i>
-                                <h4>Ventas</h4>
-                                <p>100 Nuevos Pedidos</p>
-                            </div>
-
-                            <div class="col-sm-12 col-md-3 card py-3 bg-warning text-center text-white">
-                                <i class="fas fa-users fa-5x"></i>
-                                <h4>Clientes</h4>
-                                <p>50 Nuevos Clientes</p>
-                            </div>
-
-                            <div class="col-sm-12 col-md-3 card py-3 bg-success text-center text-white">
-                                <i class="fas fa-boxes fa-5x"></i>
-                                <h4>Productos</h4>
-                                <p>100 Nuevos Productos</p>
-                            </div>
-
-                        </div>
-
+                                <li class="breadcrumb-item" aria-current="page">
+                                    Categorias
+                                </li>
+                            </ol>
+                        </nav>
                     </div>
-
                 </div>
+
+                <div class="row">
+                    <div class="card-body">
+                        <div class="col-sm-12 text-end">
+                            <button class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#agregarCategoria"><i class="fas fa-plus">
+                            </i> Nueva Categoría</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
 
                 <!-- Tabla ultimos productos -->
 
@@ -322,3 +316,36 @@
 </body>
 
 </html>
+
+<!-- Modal Categoria -->
+
+<div class="modal fade" id="agregarCategoria" tabindex="-1" role="dialog" aria-labelledby="EjemploModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="EjemploModal">
+                    Ingresar una nueva Categoría
+                </h5>
+                <button class="btn-close" type="button" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="categoria">Categoría</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Nombre de Categoría">
+                    </div>
+                    <div class="form-group">
+                        <label for="slug">Slug</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Nombre de Slug">
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Descripción">
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
