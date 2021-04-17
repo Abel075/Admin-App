@@ -122,8 +122,8 @@
                             </li>
 
                             <li
-                                class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center active">
-                                <a class="text-white nav-link" href="#">Productos</a>
+                                class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                <a class="text-dark nav-link" href="productos.html">Productos</a>
                                 <span class="badge bg-primary rounded-pill">200</span>
                             </li>
 
@@ -139,8 +139,8 @@
                             </li>
 
                             <li
-                                class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                                <a class="text-dark nav-link" href="cupones.html">Cupones</a>
+                                class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center active">
+                                <a class="text-white nav-link" href="#">Cupones</a>
                                 <span class="badge bg-primary rounded-pill">20</span>
                             </li>
                         </ul>
@@ -193,12 +193,13 @@
                                 </li>
 
                                 <li class="breadcrumb-item active" aria-current="page">
-                                    Productos
+                                    Pedidos
                                 </li>
                             </ol>
                         </nav>
                     </div>
                 </div>
+
 
                 <div class="row">
                     <div class="card-body">
@@ -208,7 +209,7 @@
 
                             <button class="btn btn-primary ms-auto" data-bs-toggle="modal"
                                 data-bs-target="#agregarProducto"><i class="fas fa-plus">
-                                </i> Nuevo Producto</button>
+                                </i> Nuevo Cupón</button>
                         </div>
                     </div>
                 </div>
@@ -217,7 +218,7 @@
 
                 <div class="card mt-5">
                     <div class="card-header bg-dark text-white">
-                        <h4><i class="fas fa-table"></i>Últimos Productos</h4>
+                        <h4><i class="fas fa-table"></i> Cupones</h4>
                     </div>
                     <div class="card-body">
 
@@ -225,9 +226,10 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Producto</th>
-                                    <th>Talle</th>
-                                    <th>Precio</th>
+                                    <th>Cupón</th>
+                                    <th>Fecha Inicial</th>
+                                    <th>Fecha Final</th>
+                                    <th>Descuento</th>
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
@@ -235,9 +237,10 @@
 
                                 <tr>
                                     <td>1</td>
-                                    <td>Camisa 1</td>
-                                    <td>l</td>
-                                    <td>900</td>
+                                    <td>XL46743</td>
+                                    <td>01/04/2021</td>
+                                    <td>29/04/2021</td>
+                                    <td>20%</td>
                                     <td style="width: 150px;">
                                         <div class="btn-group" role="group">
                                             <a href="#" class="btn btn-primary text-white"><i
@@ -251,12 +254,14 @@
                                         </div>
                                     </td>
                                 </tr>
+                                
 
                                 <tr>
-                                    <td>1</td>
-                                    <td>Camisa 2</td>
-                                    <td>Xl</td>
-                                    <td>1500</td>
+                                    <td>2</td>
+                                    <td>XL46987</td>
+                                    <td>01/04/2021</td>
+                                    <td>29/04/2021</td>
+                                    <td>30%</td>
                                     <td style="width: 150px;">
                                         <div class="btn-group" role="group">
                                             <a href="#" class="btn btn-primary text-white"><i
@@ -270,11 +275,14 @@
                                         </div>
                                     </td>
                                 </tr>
+                                
+
                                 <tr>
-                                    <td>1</td>
-                                    <td>Camisa 3</td>
-                                    <td>Xl</td>
-                                    <td>1100</td>
+                                    <td>3</td>
+                                    <td>XL46568</td>
+                                    <td>01/04/2021</td>
+                                    <td>29/04/2021</td>
+                                    <td>15%</td>
                                     <td style="width: 150px;">
                                         <div class="btn-group" role="group">
                                             <a href="#" class="btn btn-primary text-white"><i
@@ -288,6 +296,28 @@
                                         </div>
                                     </td>
                                 </tr>
+                                
+
+                                <tr>
+                                    <td>4</td>
+                                    <td>XL46743</td>
+                                    <td>01/04/2021</td>
+                                    <td>29/04/2021</td>
+                                    <td>20%</td>
+                                    <td style="width: 150px;">
+                                        <div class="btn-group" role="group">
+                                            <a href="#" class="btn btn-primary text-white"><i
+                                                    class="fas fa-edit"></i></a>
+
+                                            <a href="#" class="btn btn-success text-white"><i
+                                                    class="fas fa-list-alt"></i></a>
+
+                                            <a href="#" class="btn btn-danger text-white"><i
+                                                    class="fas fa-trash-alt"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
 
                             </tbody>
                         </table>
@@ -344,6 +374,8 @@
             </div>
         </div>
     </footer>
+
+
 
     <!-- Modal Categoria -->
 
